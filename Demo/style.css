@@ -145,7 +145,8 @@ footer p {
 
 /* 記事部分 */
 article {
-    width: 74%
+    width: 60%;
+    order: 2;
 }
 
 .news-contents {
@@ -204,7 +205,8 @@ article p {
 
 /* サイドバー */
 aside {
-    width: 22%
+    width: 22%;
+    order: 3;
 }
 
 aside p {
@@ -235,6 +237,11 @@ aside p {
 
 .sub-menu a:hover {
     color: #0bd;
+}
+
+/* バナー広告 */
+.ad{
+    order: 1;
 }
 
 /* NEWS モバイル版------------------------------*/
