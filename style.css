@@ -244,13 +244,13 @@ aside p {
     min-height: 100vh;
 }
 
-.menu-content{
+.menu-content {
     max-width: 560px;
     margin-top: 10%
 }
 
-.menu-content .page-title{
-    text-align:center;
+.menu-content .page-title {
+    text-align: center;
 }
 
 .menu-content p {
@@ -258,25 +258,115 @@ aside p {
     margin: 10px 0 0;
 }
 
-.grid{
-    display: grid; 
+.grid {
+    display: grid;
     gap: 26px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     margin-top: 6%;
     margin-bottom: 50px;
 }
 
-.big-box{
+.big-box {
     grid-column: 1/3;
-    grid-row:1/3;
+    grid-row: 1/3;
 }
 
-.big-box img{
+.big-box img {
     height: 94%;
     width: 100%;
     object-fit: cover;
 }
 
+/* Contact ------------------------------*/
+#contact {
+    background-image: url(images/contact-bg.jpg);
+    min-height: 100vh;
+}
+
+/* フォーム */
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* 店舗情報・地図 */
+#location {
+    padding: 4% 0;
+}
+
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-info {
+    width: 22%;
+}
+
+.location-info p {
+    padding: 12px 10px;
+}
+
+.location-map {
+    width: 74%;
+}
+
+/* iframe */
+iframe{
+    width: 100%;
+}
+
+/* SNS */
+#sns{
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+
+#sns .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sns .sub-title{
+    margin-bottom: 30px;
+}
+
+.sns-box{
+    width: 30%;
+}
 
 /* NEWS モバイル版------------------------------*/
 
@@ -295,7 +385,7 @@ aside p {
         margin: 0 20px;
     }
 
-    .page-header{
+    .page-header {
         flex-direction: column;
         align-items: center;
     }
@@ -306,62 +396,92 @@ aside p {
     }
 
     /* NEWS */
-    .news-contents{
+    .news-contents {
         flex-direction: column;
     }
 
     article,
-    aside{
+    aside {
         width: 100%;
     }
 
-    #news .page-title{
+    #news .page-title {
         margin-top: 30px;
     }
 
-    aside{
+    aside {
         margin-top: 60px;
     }
 
-    .post-info{
+    .post-info {
         margin-bottom: 30px;
     }
 
-    .post-date{
+    .post-date {
         width: 70px;
         height: 70px;
         font-size: 1rem;
     }
 
-    .post-date span{
+    .post-date span {
         font-size: 0.875rem;
         padding-top: 2px;
     }
 
-    .post-title{
+    .post-title {
         font-size: 1.375rem;
     }
 
-    .post-cat{
+    .post-cat {
         font-size: 0.875rem;
         margin-top: 10px;
     }
 
     .post-title,
-    .post-cat{
+    .post-cat {
         margin-left: 80px;
     }
+
     /* MENU */
-    .menu-content{
+    .menu-content {
         margin-top: 20%;
     }
 
-    .big-box{
+    .big-box {
         grid-column: auto;
-        grid-row:auto;
+        grid-row: auto;
     }
-    
-    .big-box img{
+
+    .big-box img {
         height: auto;
+    }
+
+    /* contact */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+
+    /* フォーム */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+
+    /* 店舗情報・地図 / SNS */
+    #location .wrapper,
+    #sns .wrapper
+    {
+        flex-direction: column;
+    }
+
+    .location-info,
+    .location-map,
+    .sns-box{
+        width: 100%;
+    }
+
+    .sns-box{
+        margin-bottom: 30px;
     }
 }
